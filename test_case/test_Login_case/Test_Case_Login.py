@@ -32,6 +32,7 @@ class Test_Case_Login:
         username = "18046206846"
         password = "cjb123"
         expectedSu = "标签栏"
+        #
         print("test_Login")
         Success = self.login_page_setup.Login_Password_Success(username, password).text
         assert expectedSu == Success
